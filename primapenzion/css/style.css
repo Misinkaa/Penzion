@@ -1,0 +1,223 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*p, h1, h2, h3, h4, ul, li, body*/ 
+*    {
+    margin: 0;
+    padding: 0;
+}/*jelikož každý element má své vlastnosti, tímto je vynulujeme a můžeme je upravovat podle sebe, nemusím vše vypisovat, můžu použít '*'*/
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+a, input {
+    transition: all 0.3s ease-out;
+}
+.container {
+    width: 70%;
+    margin: auto;
+}
+header .container {
+    width: 80%;
+    text-align: center;
+}
+.headerTop {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    align-items: center;
+} /*fonts.google.com zdarma fonty, fontawesome.com pro ikony*/
+    
+.headerTop a {
+    color: #000;
+    text-decoration: none;/*vypnuti podtrzeni u linku*/
+}
+.headerTop a:hover {
+    text-decoration: underline;
+    color: #b30000;
+}
+.ikony {
+    font-size: 20px;
+}
+.fa-facebook:hover {
+    color: #3b5999;
+}
+.fa-twitter:hover {
+    color: #55acee;
+}
+.fa-instagram:hover  {
+    color: #e4405f;
+}
+.logo {
+    font-size: 30px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+.logo:hover {
+    color:#b30000;
+}
+.menu ul li {
+    display: inline-block;/*s flexem
+    ul {display:flex;}*/
+    padding: 40px 0;
+}
+.menu ul li a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 50px;
+    padding-bottom: 10px;
+}
+.menu ul li a:hover {
+    border-bottom: 3px solid #b30000;
+}
+header img {
+    width: 100%;
+    vertical-align: top;
+}
+/*section*/
+.obsah {
+    padding-bottom: 100px;
+    text-align: center;
+}
+h1 {
+    font-size: 40px;
+    padding: 40px 0 60px;
+}
+.obsah h2 {
+    color: #a57a5b;
+    padding-bottom: 40px;
+}
+.obsah h2:before {
+    content: "„";
+}
+.obsah h2:after {
+    content: "“"
+}
+.obsah p{
+    line-height: 28px;
+}
+/*footer*/
+.pata {
+    background: #eaeaea;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.pata .logo {
+    font-size: 20px;
+    padding-bottom: 40px;/*a se chová jinak, proto je potřeba více specifikovat*/
+    display: block;
+}
+.pata p a,
+.sloupec p a {
+    text-decoration: none;
+    color: #000;
+}
+.pata p a:hover, 
+.sloupec p a:hover {
+    color: #b30000;
+    text-decoration: underline;
+}
+.pata p,
+.sloupec p {
+    line-height: 26px;
+}
+.pata p i,
+.sloupec p i {
+    margin-right: 15px;
+}
+.pata p b {
+    color: #b30000;
+}
+.pata .ikony a {
+    color: #000;
+    font-size: 30px;
+}
+.pata .ikony {
+    padding-top: 20px;
+}
+.copy {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+.pata p .fa-envelope {
+    transform: rotate(33deg);
+}
+/*KONTAKT*/
+.kontakt {
+    text-align: center;
+    padding: 50px 0;
+}
+.box {
+    background: #eaeaea;
+    padding-bottom: 40px;
+}
+.kontaktBox {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.sloupec p span {
+    color: #b30000;
+    font-weight: 700;
+}
+.karty i {
+    font-size: 40px;
+}
+.karty {
+    margin-top: 15px;
+}
+.kontakt iframe {
+    width: 100%; /*jsme v containeru, takže 100% z už nastavené šířky*/
+    margin: 10px 0;
+    vertical-align: top;
+}
+.box h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 10px;
+    padding: 40px 0;
+}
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="date"],
+select {
+    display: block;
+    padding: 10px;
+    width: 70%;
+    font-size: 16px;
+    margin: 0 auto 5px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: #939393;
+}
+textarea {
+    height: 130px;
+}
+input[type="submit"] {
+    padding: 15px 30px;
+    color: #b30000;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 2px solid #b30000;
+    border-radius: 10px;
+    font-size: 16px;
+    background: transparent;
+}
+input[type="submit"]:hover {
+    background: #b30000;
+    color: #fff;
+    cursor: pointer;
+}
+/*Galerie*/
+.obsah img {
+    width: 24%;
+}
+

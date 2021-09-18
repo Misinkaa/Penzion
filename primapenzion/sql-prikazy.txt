@@ -1,0 +1,11 @@
+//vytvorili jsme si databazi pro penzion
+create database penzion collate utf8_czech_ci charset utf8;
+
+//vstoupime do databaze
+use penzion;
+
+//vytvoreni tabulky stranka
+create table stranka (id varchar(255) primary key, titulek varchar(255), menu varchar(255), obrazek varchar(255), obsah text, poradi int unsigned);
+
+//
+insert into stranka set id="domu", titulek="PrimaPenzion", menu="Domů", obrazek="asdfasdf", poradi=1;
